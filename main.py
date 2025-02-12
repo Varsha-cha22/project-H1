@@ -12,8 +12,8 @@ app = FastAPI()
 # Setup Jinja2 templates
 templates = Jinja2Templates(directory="templates")
 
-# Mount static directory (for CSS, JS, images)
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# # Mount static directory (for CSS, JS, images)
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Define model & vectorizer file paths
 vectorizer_path = "models/tfidf_vectorizer.pkl"  # Changed to store in a "models" folder
